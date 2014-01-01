@@ -1,0 +1,6 @@
+task "cp-boot" << {
+    copy {
+        from '../html5/bootstrap/dist'
+        into 'bootstrap'
+    }
+}

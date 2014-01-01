@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="fat fingers of Ken Shih">
+    <meta name="author" content="Ken Shih">
+    <link rel="shortcut icon" href="ico/favicon.ico">
+
+    <title>The Fat Fingers of Ken Shih</title>
+    
+    <!-- Le styles -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet">
+   
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#about" data-toggle="tab">The Fat Fingers of Ken Shih</a>
+        </div>
+
+        <div class="nav-collapse collapse">
+            <ul class="nav navbar-nav">              
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Software Engineering<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a  id="navitem-software" 
+                          href="#software" 
+                          data-toggle="tab">Software Engineering CV</a></li>
+                  <li><a href="#investigations" data-toggle="tab">Investigations</a></li>  
+                </ul>  
+              </li>      
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fine Art <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#drawing" data-toggle="tab">Drawing</a></li>
+                  <li><a href="#painting" data-toggle="tab">Painting</a></li>  
+                  <li><a href="#sculpture" data-toggle="tab">Sculpture</a></li>
+                  <li><a href="#community" data-toggle="tab">Community</a></li>
+                  <li><a href="#profile" data-toggle="tab">Artist Profile</a></li>
+                </ul>  
+              </li>                           
+
+              <li class="active">
+                <a href="#about" data-toggle="tab">About</a>
+              </li>
+
+            </ul>
+       </div>
+    </div><!--/.navbar -->
+
+    <div class="container">
+      <div class="tab-content">
+        <div class="tab-pane" id="about"><h1>About</h1>
+            <p>
+              Ken Shih is a software engineer working for ScrippsNewtworks Interactive. He is a sculptor and painter living in New York City.
+            </p>
+        </div>
+        
+        <div class="tab-pane" id="software">software</div>
+        <div class="tab-pane" id="investigations">investigations</div>
+
+        <div class="tab-pane active" id="drawing">
+          <h1>Drawing</h1>
+          
+            <ul class="row thumbnails">
+              <li class="span4">
+                <a href="#" class="thumbnail">
+                  <img data-src="js/holder/holder.js/260x200" alt="260x200"></a>
+              </li>
+              <li class="span4">
+                <a href="#" class="thumbnail">
+                  <img data-src="js/holder/holder.js/260x200" alt="260x200"></a>
+              </li>
+              <li class="span4">
+                <a href="#" class="thumbnail">
+                  <img data-src="js/holder/holder.js/260x200" alt="260x200"></a>
+              </li>
+            </ul>
+        </div><!-- /drawing -->
+
+        <div class="tab-pane" id="painting">painting</div>
+        <div class="tab-pane" id="sculpture">sculpture</div>
+        <div class="tab-pane" id="community">community</div>
+        <div class="tab-pane" id="profile">profile</div>
+
+
+      </div>
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="js/holder/holder.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/kenshih.js"></script>
+    
+    <script>
+      /* default open for constrained screen */
+      $('.nav-collapse').collapse('show');
+      /* 
+      load tab content 
+      todo lazy-load
+       */
+
+
+    </script>
+
+  </body>
+</html>
