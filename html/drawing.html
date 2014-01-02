@@ -10,40 +10,15 @@
   </ol>
 
   <!-- Wrapper for slides -->
-  <div class="carousel-inner">
+  <div id="carousel-content-drawing" class="carousel-inner">
 
     <div class="item active">      
-        <img src="img/esteban.png" alt="500 × 455"></a>
+        <img src="img/drawing/donna.S.248x300.png" alt="500 × 455"></a>
         <div class="carousel-caption">
-          esteban
+          Drawings
         </div>
     </div>
-
-    <div class="item">
-        <a data-toggle="modal" data-target="#myModal"><img data-src="js/holder/holder.js/300x400" alt="260x200"></a>
-        <div class="carousel-caption">
-          ...
-        </div>
-        <!-- Button trigger modal -->
-        
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" 
-            aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body">
-
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4>holder title</h4>
-              </div>
-              <div class="modal-body">
-                <img data-src="js/holder/holder.js/500x500" alt="600x500">
-              </div>              
-            </div><!-- /.modal-content -->
-          </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-    </div>
-
+     <!-- Dynamically-written slides follow -->
   </div>
 
   <!-- Controls -->
@@ -55,15 +30,39 @@
   </a>
 </div>
 
-<script src="js/holder/holder.js"></script>
-
 <style>
  .carousel-inner .item img,
  .modal-body {
     margin: auto;
     text-align: center;
  }
-/* .carousel-inner {
-  height: 500px
- }*/
 </style>
+
+
+<script id="slideTemplate" type="text/html">
+
+    <div class="item">
+        <a data-toggle="modal" data-target="#modal{{id}}"><img src="{{smallPath}}" alt="{{title}}"></a>
+        <div class="carousel-caption">
+          {{title}}
+        </div>
+        <div class="modal fade" id="modal{{id}}" tabindex="-1" role="dialog" 
+            aria-labelledby="modal{{id}}Label" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4>{{title}}</h4>
+              </div>
+              <div class="modal-body">
+                <img src="{{imgPath}}" alt="{{title}}">
+              </div>              
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+    </div>
+
+</script>
+
+<script src="js/holder/holder.js"></script>
+<script src="js/art-collection.js"></script>
