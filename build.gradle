@@ -1,6 +1,17 @@
 task "cp-boot" << {
     copy {
-        from '../html5/bootstrap/dist'
+        from '../../html5/bootstrap/dist'
         into 'bootstrap'
+    }
+}
+
+task "cp-desiderata" << {
+    copy {
+        from '../desiderata/src/desiderata'
+        into 'desiderata'
+    }
+    copy {
+        from '../desiderata/src/ecosystem1.html'
+        into 'desiderata'
     }
 }
