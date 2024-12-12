@@ -2,3 +2,4 @@
 build/
 archive/
 raw/
+.DS_Store
